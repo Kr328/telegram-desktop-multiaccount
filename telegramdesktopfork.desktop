@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=Telegram Desktop Fork
+Comment=Official desktop version of Telegram messaging app
+TryExec=telegram-desktop
+Exec=bash -c "LD_PRELOAD=$HOME/.local/lib/libtghook.so exec telegram-desktop -workdir $HOME/.local/share/TelegramDesktopFork -- %u"
+Icon=telegram
+Terminal=false
+StartupWMClass=TelegramDesktopFork
+Type=Application
+Categories=Chat;Network;InstantMessaging;Qt;
+MimeType=x-scheme-handler/tg;
+Keywords=tg;chat;im;messaging;messenger;sms;tdesktop;
+X-GNOME-UsesNotifications=true
